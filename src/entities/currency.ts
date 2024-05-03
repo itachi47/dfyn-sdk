@@ -29,6 +29,7 @@ export class Currency {
   public static readonly SHM: Currency = new Currency(18, 'SHM', 'Shardeum')
   public static readonly KAVA: Currency = new Currency(18, 'KAVA', 'Kava')
   public static readonly GLMR: Currency = new Currency(18, 'GLMR', 'Moonbeam')
+  public static readonly OAS: Currency = new Currency(18, 'OAS', 'Oasys')
 
   public static readonly NATIVE = {
     [ChainId.MAINNET]: Currency.ETHER,
@@ -55,6 +56,7 @@ export class Currency {
     [ChainId.SHARDEUM]: Currency.SHM,
     [ChainId.KAVA]: Currency.KAVA,
     [ChainId.MOONBEAM]: Currency.GLMR,
+    [ChainId.SAAKURA]: Currency.OAS
   }
 
   /**

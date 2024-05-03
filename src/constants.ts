@@ -28,6 +28,7 @@ export enum ChainId {
   SHARDEUM = 8080,
   KAVA = 2222,
   MOONBEAM = 1284,
+  SAAKURA = 7225878
 }
 
 export enum TradeType {
@@ -66,6 +67,7 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.SHARDEUM]: "0xc35DADB65012eC5796536bD9864eD8773aBc74C4",
   [ChainId.KAVA]: "0xc35DADB65012eC5796536bD9864eD8773aBc74C4",
   [ChainId.MOONBEAM]: "0xc35DADB65012eC5796536bD9864eD8773aBc74C4",
+  [ChainId.SAAKURA]: "0xb9FFd4f89A86a989069CAcaE90e9ce824D0c4971"
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
@@ -93,6 +95,7 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.SHARDEUM]: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506",
   [ChainId.KAVA]: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506",
   [ChainId.MOONBEAM]: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506",
+  [ChainId.SAAKURA]: "0x62BFfED6057555BaDD59e6C512a46c46898328f7"
 }
 
 // export const INIT_CODE_HASH = '0xf187ed688403aa4f7acfada758d8d53698753b998a3071b06f1b777f4330eaf3'
@@ -120,7 +123,8 @@ export const INIT_CODE_HASH: { [chainId in ChainId]: string } = {
   [ChainId.AURORA]: "0xf187ed688403aa4f7acfada758d8d53698753b998a3071b06f1b777f4330eaf3",
   [ChainId.SHARDEUM]: "0xf187ed688403aa4f7acfada758d8d53698753b998a3071b06f1b777f4330eaf3",
   [ChainId.KAVA]: "0xf187ed688403aa4f7acfada758d8d53698753b998a3071b06f1b777f4330eaf3",
-  [ChainId.MOONBEAM]: "0xf187ed688403aa4f7acfada758d8d53698753b998a3071b06f1b777f4330eaf3"
+  [ChainId.MOONBEAM]: "0xf187ed688403aa4f7acfada758d8d53698753b998a3071b06f1b777f4330eaf3",
+  [ChainId.SAAKURA]: "0xf187ed688403aa4f7acfada758d8d53698753b998a3071b06f1b777f4330eaf3"
 }
 
 
