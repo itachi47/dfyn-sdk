@@ -148,5 +148,5 @@ export const WETH = {
   [ChainId.SHARDEUM]: new Token(ChainId.SHARDEUM, '0x0000000000000000000000000000000000000000', 18, 'WSHM', 'Wrapped SHM'),
   [ChainId.KAVA]: new Token(ChainId.KAVA, '0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b', 18, 'WKAVA', 'Wrapped KAVA'),
   [ChainId.MOONBEAM]: new Token(ChainId.MOONBEAM, '0xAcc15dC74880C9944775448304B263D191c6077F', 18, 'WGLMR', 'Wrapped GLMR'),
-  [ChainId.SAAKURA]: new Token(ChainId.SAAKURA, '0x7bc8b1b5aba4df3be9f9a32dae501214dc0e4f3f', 18, 'WOAS', 'Wrapped OAS')
+  [ChainId.SAAKURA]: new Token(ChainId.SAAKURA, '0x557a526472372f1F222EcC6af8818C1e6e78A85f', 18, 'WOAS', 'Wrapped OAS')
 }
