@@ -39,8 +39,8 @@ export class Currency {
     [ChainId.BSC]: Currency.BNB,
     [ChainId.FANTOM]: Currency.FTM,
     [ChainId.HARMONY]: Currency.ONE,
-    [ChainId.AVALANCHE]: Currency.AVAX
-
+    [ChainId.AVALANCHE]: Currency.AVAX,
+    [ChainId.BASE]: Currency.ETHER,
   }
 
   /**
