@@ -45,7 +45,7 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HARMONY]: '0xd9820a17053d6314B20642E465a84Bf01a3D64f5',
   [ChainId.BSC]: '0xd9820a17053d6314B20642E465a84Bf01a3D64f5',
   [ChainId.AVALANCHE]: '0xd9820a17053d6314B20642E465a84Bf01a3D64f5',
-  [ChainId.BASE]: '0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429', //TODO: change to base factory address
+  [ChainId.BASE]: '', //TODO: change to base factory address
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
@@ -62,7 +62,7 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HARMONY]: '0x8973792d9E8EA794E546b62c0f2295e32a6d7E48',
   [ChainId.BSC]: '0x2724B9497b2cF3325C6BE3ea430b3cec34B5Ef2d',
   [ChainId.AVALANCHE]: '0x4c28f48448720e9000907BC2611F73022fdcE1fA',
-  [ChainId.BASE]: '0xaedE1EFe768bD8A1663A7608c63290C60B85e71c', //TODO: change to base router address
+  [ChainId.BASE]: '', //TODO: change to base router address
 }
 
 // export const INIT_CODE_HASH = '0xf187ed688403aa4f7acfada758d8d53698753b998a3071b06f1b777f4330eaf3'
@@ -80,7 +80,7 @@ export const INIT_CODE_HASH: { [chainId in ChainId]: string } = {
   [ChainId.HARMONY]: '0xd3ab2c392f54feb4b3b2a677f449b133c188ad2f1015eff3e94ea9315282c5f5',
   [ChainId.BSC]: '0xd3ab2c392f54feb4b3b2a677f449b133c188ad2f1015eff3e94ea9315282c5f5',
   [ChainId.AVALANCHE]: '0x512ce213a92fcce51fda9ba8738d5584ab111453ad8da5d2bd7d36bc97d14b5c',
-  [ChainId.BASE]: '0xd49917af2b31d70ba7bea89230a93b55d3b6a99aacd03a72c288dfe524ec2f36', //TODO: change to base init code hash
+  [ChainId.BASE]: '', //TODO: change to base init code hash
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
