@@ -41,6 +41,8 @@ export class Currency {
     [ChainId.HARMONY]: Currency.ONE,
     [ChainId.AVALANCHE]: Currency.AVAX,
     [ChainId.BASE]: Currency.ETHER,
+    [ChainId.OPTIMISM]: Currency.ETHER,
+    [ChainId.MANTLE]: Currency.ETHER
   }
 
   /**

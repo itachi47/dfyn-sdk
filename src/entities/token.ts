@@ -101,8 +101,7 @@ export const WETH = {
     'WETH',
     'Wrapped ETH'
   ),
-  // TODO: Base Chain
-  [ChainId.BASE]: new Token(ChainId.BASE, '0x82af49447d8a07e3bd95bd0d56f35241523fbab1', 18, 'WETH', 'Wrapped ETH'),
+
   [ChainId.BSC]: new Token(ChainId.BSC, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'),
   [ChainId.FANTOM]: new Token(ChainId.FANTOM, '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18, 'WFTM', 'Wrapped FTM'),
   [ChainId.HARMONY]: new Token(
@@ -119,5 +118,11 @@ export const WETH = {
     18,
     'XAVAX',
     'Wrapped AVAX'
-  )
+  ),
+  // TODO: Base Chain
+  [ChainId.BASE]: new Token(ChainId.BASE, '0x82af49447d8a07e3bd95bd0d56f35241523fbab1', 18, 'WETH', 'Wrapped ETH'),
+  // TODO: Optimism Chain
+  [ChainId.OPTIMISM]: new Token(ChainId.BASE, '0x82af49447d8a07e3bd95bd0d56f35241523fbab1', 18, 'WETH', 'Wrapped ETH'),
+  // TODO: Mantle Chain
+  [ChainId.MANTLE]: new Token(ChainId.BASE, '0x82af49447d8a07e3bd95bd0d56f35241523fbab1', 18, 'WETH', 'Wrapped ETH')
 }

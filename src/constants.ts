@@ -17,18 +17,20 @@ export enum ChainId {
   BSC = 56,
   HARMONY = 1666600000,
   AVALANCHE = 43114,
-  BASE = 8453
+  BASE = 8453,
+  OPTIMISM = 10,
+  MANTLE = 5000
 }
 
 export enum TradeType {
   EXACT_INPUT,
-  EXACT_OUTPUT,
+  EXACT_OUTPUT
 }
 
 export enum Rounding {
   ROUND_DOWN,
   ROUND_HALF_UP,
-  ROUND_UP,
+  ROUND_UP
 }
 
 export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
@@ -46,6 +48,8 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '0xd9820a17053d6314B20642E465a84Bf01a3D64f5',
   [ChainId.AVALANCHE]: '0xd9820a17053d6314B20642E465a84Bf01a3D64f5',
   [ChainId.BASE]: '', //TODO: change to base factory address
+  [ChainId.OPTIMISM]: '',
+  [ChainId.MANTLE]: ''
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
@@ -63,6 +67,8 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '0x2724B9497b2cF3325C6BE3ea430b3cec34B5Ef2d',
   [ChainId.AVALANCHE]: '0x4c28f48448720e9000907BC2611F73022fdcE1fA',
   [ChainId.BASE]: '', //TODO: change to base router address
+  [ChainId.OPTIMISM]: '',
+  [ChainId.MANTLE]: ''
 }
 
 // export const INIT_CODE_HASH = '0xf187ed688403aa4f7acfada758d8d53698753b998a3071b06f1b777f4330eaf3'
@@ -81,6 +87,8 @@ export const INIT_CODE_HASH: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '0xd3ab2c392f54feb4b3b2a677f449b133c188ad2f1015eff3e94ea9315282c5f5',
   [ChainId.AVALANCHE]: '0x512ce213a92fcce51fda9ba8738d5584ab111453ad8da5d2bd7d36bc97d14b5c',
   [ChainId.BASE]: '', //TODO: change to base init code hash
+  [ChainId.OPTIMISM]: '',
+  [ChainId.MANTLE]: ''
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
@@ -98,12 +106,12 @@ export const _1000 = JSBI.BigInt(1000)
 
 export enum SolidityType {
   uint8 = 'uint8',
-  uint256 = 'uint256',
+  uint256 = 'uint256'
 }
 
 export const SOLIDITY_TYPE_MAXIMA = {
   [SolidityType.uint8]: JSBI.BigInt('0xff'),
-  [SolidityType.uint256]: JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'),
+  [SolidityType.uint256]: JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff')
 }
 
 export const V2_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
@@ -121,6 +129,8 @@ export const V2_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '',
   [ChainId.AVALANCHE]: '',
   [ChainId.BASE]: '',
+  [ChainId.OPTIMISM]: '',
+  [ChainId.MANTLE]: ''
 }
 
 export const V2_DEPLOYER_ADDRESS: { [chainId in ChainId]: string } = {
@@ -138,6 +148,8 @@ export const V2_DEPLOYER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '',
   [ChainId.AVALANCHE]: '',
   [ChainId.BASE]: '',
+  [ChainId.OPTIMISM]: '',
+  [ChainId.MANTLE]: ''
 }
 export const V2_MASTER_DEPLOYER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
@@ -154,6 +166,8 @@ export const V2_MASTER_DEPLOYER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '',
   [ChainId.AVALANCHE]: '',
   [ChainId.BASE]: '',
+  [ChainId.OPTIMISM]: '',
+  [ChainId.MANTLE]: ''
 }
 
 export const ADDRESS_ZERO = '0x0000000000000000000000000000000000000000'
@@ -173,6 +187,8 @@ export const V2_POOL_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
   [ChainId.BSC]: '',
   [ChainId.AVALANCHE]: '',
   [ChainId.BASE]: '',
+  [ChainId.OPTIMISM]: '',
+  [ChainId.MANTLE]: ''
 }
 
 /**
@@ -180,7 +196,7 @@ export const V2_POOL_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
  */
 export enum FeeAmount {
   // LOWEST = 100,
-  LOW = 1500,
+  LOW = 1500
   // MEDIUM = 3000,
   // HIGH = 10000
 }
@@ -190,7 +206,7 @@ export enum FeeAmount {
  */
 export const TICK_SPACINGS: { [amount in FeeAmount]: number } = {
   // [FeeAmount.LOWEST]: 1,
-  [FeeAmount.LOW]: 10,
+  [FeeAmount.LOW]: 10
   // [FeeAmount.MEDIUM]: 60,
   // [FeeAmount.HIGH]: 200
 }
