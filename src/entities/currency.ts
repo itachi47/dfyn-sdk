@@ -56,7 +56,8 @@ export class Currency {
     [ChainId.SHARDEUM]: Currency.SHM,
     [ChainId.KAVA]: Currency.KAVA,
     [ChainId.MOONBEAM]: Currency.GLMR,
-    [ChainId.SAAKURA]: Currency.OAS
+    [ChainId.SAAKURA]: Currency.OAS,
+    [ChainId.MATCHAIN]: Currency.BNB
   }
 
   /**
