@@ -25,6 +25,7 @@ export class Currency {
   public static readonly BNB: Currency = new Currency(18, 'BNB', 'Binance Coin')
   public static readonly FTM: Currency = new Currency(18, 'FTM', 'Fantom')
   public static readonly AVAX: Currency = new Currency(18, 'AVAX', 'Avalanche')
+  public static readonly ROUTE: Currency = new Currency(18, 'ROUTE', 'ROUTE')
 
   public static readonly NATIVE = {
     [ChainId.MAINNET]: Currency.ETHER,
@@ -42,7 +43,8 @@ export class Currency {
     [ChainId.AVALANCHE]: Currency.AVAX,
     [ChainId.BASE]: Currency.ETHER,
     [ChainId.OPTIMISM]: Currency.ETHER,
-    [ChainId.MANTLE]: Currency.ETHER
+    [ChainId.MANTLE]: Currency.ETHER,
+    [ChainId.ROUTER]: Currency.ROUTE
   }
 
   /**

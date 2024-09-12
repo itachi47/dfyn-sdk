@@ -19,7 +19,8 @@ export enum ChainId {
   AVALANCHE = 43114,
   BASE = 8453,
   OPTIMISM = 10,
-  MANTLE = 5000
+  MANTLE = 5000,
+  ROUTER = 9600
 }
 
 export enum TradeType {
@@ -49,7 +50,8 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.AVALANCHE]: '0xd9820a17053d6314B20642E465a84Bf01a3D64f5',
   [ChainId.BASE]: '', //TODO: change to base factory address
   [ChainId.OPTIMISM]: '',
-  [ChainId.MANTLE]: ''
+  [ChainId.MANTLE]: '',
+  [ChainId.ROUTER]: ''
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
@@ -68,7 +70,8 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.AVALANCHE]: '0x4c28f48448720e9000907BC2611F73022fdcE1fA',
   [ChainId.BASE]: '', //TODO: change to base router address
   [ChainId.OPTIMISM]: '',
-  [ChainId.MANTLE]: ''
+  [ChainId.MANTLE]: '',
+  [ChainId.ROUTER]: ''
 }
 
 // export const INIT_CODE_HASH = '0xf187ed688403aa4f7acfada758d8d53698753b998a3071b06f1b777f4330eaf3'
@@ -88,7 +91,8 @@ export const INIT_CODE_HASH: { [chainId in ChainId]: string } = {
   [ChainId.AVALANCHE]: '0x512ce213a92fcce51fda9ba8738d5584ab111453ad8da5d2bd7d36bc97d14b5c',
   [ChainId.BASE]: '', //TODO: change to base init code hash
   [ChainId.OPTIMISM]: '',
-  [ChainId.MANTLE]: ''
+  [ChainId.MANTLE]: '',
+  [ChainId.ROUTER]: ''
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
@@ -130,7 +134,8 @@ export const V2_FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.AVALANCHE]: '',
   [ChainId.BASE]: '',
   [ChainId.OPTIMISM]: '',
-  [ChainId.MANTLE]: ''
+  [ChainId.MANTLE]: '',
+  [ChainId.ROUTER]: ''
 }
 
 export const V2_DEPLOYER_ADDRESS: { [chainId in ChainId]: string } = {
@@ -149,7 +154,8 @@ export const V2_DEPLOYER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.AVALANCHE]: '',
   [ChainId.BASE]: '',
   [ChainId.OPTIMISM]: '',
-  [ChainId.MANTLE]: ''
+  [ChainId.MANTLE]: '',
+  [ChainId.ROUTER]: ''
 }
 export const V2_MASTER_DEPLOYER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
@@ -167,7 +173,8 @@ export const V2_MASTER_DEPLOYER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.AVALANCHE]: '',
   [ChainId.BASE]: '',
   [ChainId.OPTIMISM]: '',
-  [ChainId.MANTLE]: ''
+  [ChainId.MANTLE]: '',
+  [ChainId.ROUTER]: ''
 }
 
 export const ADDRESS_ZERO = '0x0000000000000000000000000000000000000000'
@@ -188,7 +195,8 @@ export const V2_POOL_INIT_CODE_HASH: { [chainId in ChainId]: string } = {
   [ChainId.AVALANCHE]: '',
   [ChainId.BASE]: '',
   [ChainId.OPTIMISM]: '',
-  [ChainId.MANTLE]: ''
+  [ChainId.MANTLE]: '',
+  [ChainId.ROUTER]: ''
 }
 
 /**

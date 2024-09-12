@@ -124,5 +124,7 @@ export const WETH = {
   // TODO: Optimism Chain
   [ChainId.OPTIMISM]: new Token(ChainId.BASE, '0x82af49447d8a07e3bd95bd0d56f35241523fbab1', 18, 'WETH', 'Wrapped ETH'),
   // TODO: Mantle Chain
-  [ChainId.MANTLE]: new Token(ChainId.BASE, '0x82af49447d8a07e3bd95bd0d56f35241523fbab1', 18, 'WETH', 'Wrapped ETH')
+  [ChainId.MANTLE]: new Token(ChainId.BASE, '0x82af49447d8a07e3bd95bd0d56f35241523fbab1', 18, 'WETH', 'Wrapped ETH'),
+   // TODO: Router Chain
+  [ChainId.ROUTER]: new Token(ChainId.ROUTER, '0x82af49447d8a07e3bd95bd0d56f35241523fbab1', 18, 'WETH', 'Wrapped ETH')
 }
